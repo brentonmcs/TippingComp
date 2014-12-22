@@ -1,6 +1,6 @@
 (function(database) {
-
-    var mongodb = require('mongodb');
+    "use strict";
+    var mongodb = require("mongodb");
     var mongoUrl = "mongodb://localhost:27017/tipping";
     var theDb = null;
 
@@ -21,6 +21,6 @@
 
         } else {
             return next(null, theDb);
-        };
-    }
+        }
+    };
 })(module.exports);
