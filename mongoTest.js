@@ -1,6 +1,6 @@
 'use strict';
 
-var database = require('./database');
+var database = require('./Common/database');
 
 database.getDatabase(function (err, db) {
    if (err) {

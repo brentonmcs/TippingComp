@@ -1,7 +1,7 @@
 (function () {
    "use strict";
-   var rabbit = require("./rabbitMQConnect");
-   var database = require("./database");
+   var rabbit = require("./Common/rabbitMQConnect");
+   var database = require("./Common/database");
 
    rabbit.receiveJson(function (json) {
 
